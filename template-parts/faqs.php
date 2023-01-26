@@ -1,5 +1,5 @@
 
-<section class="bg-whitlockLightBlue py-20">
+<section id="faq-section" class="bg-whitlockLightBlue py-20">
     <div class="container">
         <div class="row">  
             <div class="col">

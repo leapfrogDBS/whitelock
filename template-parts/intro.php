@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col">
                 <div class="bg-contain bg-no-repeat pt-20 pb-14" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/lines.png')">
-                    <img src="<?php echo $intro_image['url']; ?>">
+                    <img loading="lazy" src="<?php echo $intro_image['url']; ?>">
                 </div>
                 <h2 class="headingTwo"><?php echo $intro_headline; ?></h2>
                 <p class="bodyText"><?php echo $intro_copy; ?></p>

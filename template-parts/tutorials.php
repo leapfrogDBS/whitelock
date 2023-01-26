@@ -30,11 +30,11 @@
 
                         ?>
                         <div class="col bg-whitlockBlue text-white rounded-2xl mb-12">
-                            <p class="bodyText my-1"><?php echo $count; ?></p>
-                            <img src="<?php echo $tutorials_image['url']; ?>" alt="">
-                            <div class="px-6 py-8">
+                            <p class="bodyText my-1 pt-1 font-gothic-bold"><?php echo sprintf("%02d", $count); ?></p>
+                            <img loading="lazy" src="<?php echo $tutorials_image['url']; ?>" alt="">
+                            <div class="px-6 py-8 pb-10">
                                 <h2 class="headingTwo uppercase leading-none"><?php echo $tutorials_title; ?></h2>
-                                <p class="bodyText"><?php echo $tutorials_info; ?></p>
+                                <p class="bodyText mb-8"><?php echo $tutorials_info; ?></p>
                                 <a class="cta-button cta-button-white-outline" href="<?php echo $tutorials_link['url']; ?>">Find out more</a>
                             </div>
                         </div>

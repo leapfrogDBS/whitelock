@@ -6,37 +6,47 @@
     
 	
 ?>
-<section class="bg-cover bg-no-repeat" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/loft-plan.png')">
+<section id="testimonials-section" class="bg-cover bg-no-repeat" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/loft-plan.png')">
     <div class="container">
         <div class="row">  
             
             <div class="col mb-12">
-                <img class="h-6 w-auto mx-auto mb-6" src="<?php echo get_stylesheet_directory_uri(); ?>/img/black-stars.png" alt="">
+                <img loading="lazy" class="h-6 w-auto mx-auto mb-6" src="<?php echo get_stylesheet_directory_uri(); ?>/img/black-stars.png" alt="">
                 <h2 class="headingTwo"><?php echo $testimonials_headline; ?></h2>
             </div>
 
             <?php
-                if(have_rows('testimonials_repeater')) {
-                    while( have_rows('testimonials_repeater') ) : the_row(); 
-                        $testimonials_image = get_sub_field('testimonials_image');
-                        $testimonials_name = get_sub_field('testimonials_name');
-                        $testimonials_position = get_sub_field('testimonials_position');
-                        $testimonials_review = get_sub_field('testimonials_review');
+                if(have_rows('testimonials_repeater')) { ?>
+                    <div class="splider col" id="testimonial-slider">
+                        <div class="splide__track">
+                            <ul class="splide__list sm:grid sm:grid-cols-12 sm:gap-x-6"> 
+                                <?php
+                                while( have_rows('testimonials_repeater') ) : the_row(); 
+                                    $testimonials_image = get_sub_field('testimonials_image');
+                                    $testimonials_name = get_sub_field('testimonials_name');
+                                    $testimonials_position = get_sub_field('testimonials_position');
+                                    $testimonials_review = get_sub_field('testimonials_review');
 
-                        ?>
-                        <div class="col">
-                            <div class="rounded-xl drop-shadow-2xl bg-white relative mb-12 p-8 pb-12">
-                                <img class="h-24 w-24 mx-auto mb-6 -mt-16" src="<?php echo $testimonials_image['url']; ?>" alt="">
-                                <img class="h-3 w-auto mx-auto mb-4" src="<?php echo get_stylesheet_directory_uri(); ?>/img/black-stars.png" alt="">
-                                <h3 class="headingThree"><?php echo $testimonials_name; ?></h3>
-                                <p class="subtitleTwo mb-4"><?php echo $testimonials_position; ?></p>
-                                <p class="bodyText"><?php echo $testimonials_review; ?></p>
-                            </div>
+                                    ?>
+                                    <li class="splide__slide sm:col-span-4 relative pt-12">
+                                       
+                                        <img loading="lazy" class="h-24 w-24 mx-auto mb-6 absolute top-0 left-0 right-0 z-50 " src="<?php echo $testimonials_image['url']; ?>" alt="">
+                                        <div class="rounded-xl bg-white relative mb-12 p-8 pb-12 pt-16 shadow-md">
+                                            <img loading="lazy" class="h-3 w-auto mx-auto mb-4" src="<?php echo get_stylesheet_directory_uri(); ?>/img/black-stars.png" alt="">
+                                            <h3 class="headingThree"><?php echo $testimonials_name; ?></h3>
+                                            <p class="subtitleTwo mb-4"><?php echo $testimonials_position; ?></p>
+                                            <p class="bodyText"><?php echo $testimonials_review; ?></p>
+                                        </div>
+                                       
+                                    </li>
+                                <?php 
+                                endwhile; ?>
+                            </ul>
                         </div>
-                    <?php 
-                    endwhile;
+                    </div>
+                <?php    
                 }
-            ?>
+                ?>
 
             <div class="col bg-cover bg-no-repeat rounded-3xl p-8" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/gumroad-bg.png')">
                 <h2 class="headingTwo mb-6"><?php echo $testimonials_gumroad_rating; ?></h2>
@@ -53,3 +63,20 @@
     </div>
 </section>
 
+<script defer>
+    var testimonailSlider = new Splide( '#testimonial-slider', {
+        pagination: false,
+        autoplay: false,
+        arrows: false,
+        type: 'loop',
+        mediaQuery: 'min',
+        padding: '2rem',
+        gap: '1rem',
+        breakpoints: {
+            640: {
+                destroy: true,
+            },
+        },
+    });
+    testimonailSlider.mount();
+</script>

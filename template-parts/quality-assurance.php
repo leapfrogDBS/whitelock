@@ -10,12 +10,12 @@
         <div class="row"> 
             
             <div class="col mb-6">
-                <img src="<?php echo $qa_image['url']; ?>" alt="">
+                <img loading="lazy" src="<?php echo $qa_image['url']; ?>" alt="">
             </div>
             
             
             <div class="col">
-                <img class="h-6 w-auto mx-auto my-6" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shield.png" alt="">
+                <img loading="lazy" class="h-6 w-auto mx-auto my-6" src="<?php echo get_stylesheet_directory_uri(); ?>/img/shield.png" alt="">
                 <h2 class="headingTwo"><?php echo $qa_headline; ?></h2>
             </div>
 
@@ -27,7 +27,7 @@
                             $qa_point = get_sub_field('qa_point');
                         ?>
                             <div>
-                                <img class="h-5 w-auto mx-auto my-4" src="<?php echo get_stylesheet_directory_uri(); ?>/img/black-tick.png" alt="">
+                                <img loading="lazy" class="h-5 w-auto mx-auto my-4" src="<?php echo get_stylesheet_directory_uri(); ?>/img/black-tick.png" alt="">
                                 <p class="bodyText mb-8"><?php echo $qa_point; ?></p>
                             </div>
                             
@@ -42,7 +42,7 @@
             <div class="col">
                 <?php if($qa_button_text && $qa_button_link) {
                 ?>
-                    <a href="<?php echo $qa_button_link['url']; ?>"><?php echo $qa_button_text; ?></a>
+                    <a class="cta-button cta-button-black mt-6" href="<?php echo $qa_button_link['url']; ?>"><?php echo $qa_button_text; ?></a>
                 <?php
                 }
                 ?>

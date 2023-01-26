@@ -4,7 +4,7 @@
 
 @layer components {
     body {
-        @apply text-black font-gothic leading-tight;
+        @apply text-black font-gothic leading-tight mb-0;
     }
 
    	.container {
@@ -60,10 +60,52 @@
 	font-family: 'gothic-bold';
 	src: url("../fonts/GOTHICB0.TTF") format("truetype");
 }
+html {
+    scroll-behavior: smooth;
+}
 .white-text {
     color: #fff !important;
 }
 #tutorials-section {
-    background-size: 100% 80%;
+    background-size: 100% 95%;
     background-position: center top;
+}
+
+/*Hamburger transitions with open class added via javascript */
+.open {
+    transform: rotate(90deg) !important;
+    transform: translateY(0px) !important;
+}
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px) !important;
+}
+.open .hamburger-middle {
+    display: none;
+}
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px) !important;
+}
+body.no-scroll {
+    overflow: hidden;
+    height: 100%;
+}
+#mobile-menu .cta-button {
+    margin-top: 2rem;
+}
+#mobile-menu li {
+    margin-bottom: 1rem;
+}
+#desktop-menu #menu-main-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+#desktop-menu #menu-main-menu a {
+    font-size: 14px;
+}
+#desktop-menu .cta-button {
+    margin-left: 2rem;
+}
+#image-slider .splide__slide img {
+    border-radius: 25px;
 }
