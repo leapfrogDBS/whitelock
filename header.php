@@ -25,8 +25,8 @@
 <div id="page" class="site relative">
 	<header id="masthead" class="site-header py-6 bg-transparent absolute top-0 left-0 right-0 z-50">
 		<div class="container flex items-center justify-between">
-			<img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/blue-logo.png" class="w-12 h-auto md:order-3" alt="">
-			<img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/blue-logo-text.png" class="w-40 h-auto md:order-1" alt="">
+			<img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/blue-logo.png" class="w-12 h-auto md:order-3 lg:w-24" alt="">
+			<img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/blue-logo-text.png" class="w-40 h-auto md:order-1 lg:w-72" alt="">
 		
 			<div id="mobile-menu-header" class="w-[28px] h-[18px] md:w-[40px] md:order-2 md:hidden">
 				<div class="hamburger md:hidden relative w-8 h-[22px] cursor-pointer transition-all duration-[0.25s] z-[999] md:w-[40px]" id="menu-btn">

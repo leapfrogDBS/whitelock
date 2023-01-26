@@ -6,7 +6,7 @@
 <section class="py-20">
     <div class="container">
         <div class="row">  
-            <div class="col mb-12">
+            <div class="col mb-12 mx-auto max-w-3xl">
                 <h2 class="headingTwo"><?php echo $tutorials_headline; ?></h2>
                 <p class="bodyText"><?php echo $tutorials_copy; ?></p>
             </div>
@@ -29,13 +29,18 @@
                         
 
                         ?>
-                        <div class="col bg-whitlockBlue text-white rounded-2xl mb-12">
-                            <p class="bodyText my-1 pt-1 font-gothic-bold"><?php echo sprintf("%02d", $count); ?></p>
-                            <img loading="lazy" src="<?php echo $tutorials_image['url']; ?>" alt="">
-                            <div class="px-6 py-8 pb-10">
-                                <h2 class="headingTwo uppercase leading-none"><?php echo $tutorials_title; ?></h2>
-                                <p class="bodyText mb-8"><?php echo $tutorials_info; ?></p>
-                                <a class="cta-button cta-button-white-outline" href="<?php echo $tutorials_link['url']; ?>">Find out more</a>
+                        <div class="col bg-whitlockBlue text-white rounded-2xl mb-12 lg:grid lg:grid-cols-12">
+                            <p class="bodyText my-1 pt-1 font-gothic-bold lg:hidden"><?php echo sprintf("%02d", $count); ?></p>
+                            <img loading="lazy" src="<?php echo $tutorials_image['url']; ?>" class="lg:order-2 lg:col-span-8 lg:rounded-r-2xl lg:h-full lg:object-cover" alt="">
+                            <div class="px-6 py-8 pb-10 lg:order-1 lg:col-span-4 lg:p-0 lg:flex lg:flex-col lg:justify-between">
+                                <p class="hidden bodyText py-3 font-gothic-bold lg:block lg:border-b lg:border-white"><?php echo sprintf("%02d", $count); ?></p>
+                                <div class="lg:px-6 lg:text-left">
+                                    <h2 class="headingTwo uppercase leading-none"><?php echo $tutorials_title; ?></h2>
+                                    <p class="bodyText mb-8"><?php echo $tutorials_info; ?></p>
+                                </div>
+                                <div class="lg:border-t lg:border-white lg:py-6 lg:text-left lg:pl-6">
+                                    <a class="cta-button cta-button-white-outline" href="<?php echo $tutorials_link['url']; ?>">Find out more</a>
+                                </div>
                             </div>
                         </div>
                     <?php 

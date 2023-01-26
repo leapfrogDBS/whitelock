@@ -5,11 +5,11 @@
     $prev_work_button_link = get_field('prev_work_button_link');
     	
 ?>
-<section class="bg-black text-white pb-20">
+<section class="bg-black text-white pb-20 lg:pb-36">
     <div class="container">
-        <div class="row">  
+        <div class="row lg:gap-12">  
             
-            <div class="col mb-12">
+            <div class="col mb-12 mx-auto max-w-3xl">
                 <p class="body-text"><?php echo $prev_work_copy; ?></p>
             </div>
 
@@ -22,7 +22,7 @@
                         $prev_work_slide_images = get_sub_field('prev_work_slide_images');                      
 
                         ?>
-                        <div class="col mb-12">
+                        <div class="col mb-12 lg:col-span-6 lg:mb-0">
                             <?php if ($prev_work_slide_images) { ?>
                                 <div id="image-slider" class="splide relative">
                                     <div class="splide__arrows absolute right-6 bottom-6 flex gap-x-2">
@@ -65,7 +65,7 @@
         </div>
         <?php if ($prev_work_button_text && $prev_work_button_link) { ?>
             <div class="row">
-                <div class="col">
+                <div class="col lg:mt-16">
                     <p class="bodyText mt-12 mb-12"><?php echo $prev_work_bottom_section_copy; ?></p>
                     <a href="<?php echo $prev_work_button_link['url']; ?>" class="cta-button cta-button-white-outline"><?php echo $prev_work_button_text; ?></a>
                 </div>
