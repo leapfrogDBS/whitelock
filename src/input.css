@@ -18,10 +18,10 @@
     }
 
     .headingOne {
-        @apply font-gothic-bold text-center text-4xl mb-8 lg:text-7xl lg:mb-16;
+        @apply font-gothic-bold text-center text-4xl mb-8 sm:text-5xl md:text-6xl lg:text-7xl lg:mb-16;
     }
     .headingTwo {
-        @apply font-gothic-bold text-2xl leading-tight mb-4 lg:text-4xl lg:mb-8;
+        @apply font-gothic-bold text-2xl leading-tight mb-4 md:text-3xl lg:text-4xl lg:mb-8;
     }
     .headingThree {
         @apply font-gothic-bold text-xl lg:text-2xl ;
@@ -30,7 +30,7 @@
         @apply text-sm leading-tight mb-4;
     }
     .subtitleTwo {
-        @apply text-xs lg:text-sm;
+        @apply text-xs md:text-base lg:text-sm;
     }
 
     .poi-container {
