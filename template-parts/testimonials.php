@@ -11,7 +11,7 @@
         <div class="row">  
             
             <div class="col mb-12">
-                <img loading="lazy" class="h-6 w-auto mx-auto mb-6 lg:h-8" src="<?php echo get_stylesheet_directory_uri(); ?>/img/black-stars.png" alt="">
+                <img loading="lazy" class="h-6 w-auto mx-auto mb-6 lg:h-8" src="<?php echo get_stylesheet_directory_uri(); ?>/img/black-stars.png" alt="5-star-rating">
                 <h2 class="headingTwo"><?php echo $testimonials_headline; ?></h2>
             </div>
 
@@ -30,9 +30,9 @@
                                     ?>
                                     <li class="splide__slide sm:col-span-4 relative pt-12 lg:pt-16">
                                        
-                                        <img loading="lazy" class="h-24 w-24 mx-auto mb-6 absolute top-0 left-0 right-0 z-50 lg:h-36 lg:w-36" src="<?php echo $testimonials_image['url']; ?>" alt="">
+                                        <img  class="h-24 w-24 mx-auto mb-6 absolute top-0 left-0 right-0 z-50 lg:h-36 lg:w-36" data-splide-lazy="<?php echo $testimonials_image['url']; ?>" alt="5-star-rating">
                                         <div class="rounded-xl bg-white relative mb-12 p-8 pb-12 pt-16 shadow-md lg:pt-32">
-                                            <img loading="lazy" class="h-3 w-auto mx-auto mb-4 lg:h-5" src="<?php echo get_stylesheet_directory_uri(); ?>/img/black-stars.png" alt="">
+                                            <img loading="lazy" class="h-3 w-auto mx-auto mb-4 lg:h-5" src="<?php echo get_stylesheet_directory_uri(); ?>/img/black-stars.png" alt="5-star-rating">
                                             <h3 class="headingThree"><?php echo $testimonials_name; ?></h3>
                                             <p class="subtitleTwo mb-4"><?php echo $testimonials_position; ?></p>
                                             <p class="bodyText"><?php echo $testimonials_review; ?></p>
@@ -67,6 +67,7 @@
     var testimonailSlider = new Splide( '#testimonial-slider', {
         pagination: false,
         autoplay: false,
+        lazyLoad: true,
         arrows: false,
         type: 'loop',
         mediaQuery: 'min',

@@ -39,23 +39,23 @@ $facebook = get_field('facebook', 'options');
 				<div class="row mt-8 lg:items-center lg:mt-14">
 					<div class="col flex gap-x-2 justify-center lg:col-span-6 lg:justify-end lg:order-2">
 						<?php if($linkedin) { ?>
-							<a href="<?php echo $linkedin['url']; ?>"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social-media/linkedin.svg" class="w-8 h-auto" alt=""></a>
+							<a href="<?php echo $linkedin['url']; ?>"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social-media/linkedin.svg" class="w-8 h-auto" alt="linkedin-link"></a>
 						<?php } ?>
 						<?php if($youtube) { ?>
-							<a href="<?php echo $youtube['url']; ?>"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social-media/youtube.svg" class="w-8 h-auto" alt=""></a>
+							<a href="<?php echo $youtube['url']; ?>"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social-media/youtube.svg" class="w-8 h-auto" alt="youtube-link"></a>
 						<?php } ?>
 						<?php if($instagram) { ?>
-							<a href="<?php echo $instagram['url']; ?>"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social-media/insta.svg" class="w-8 h-auto" alt=""></a>
+							<a href="<?php echo $instagram['url']; ?>"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social-media/insta.svg" class="w-8 h-auto" alt="instagram-link"></a>
 						<?php } ?>
 						<?php if($imdb) { ?>
-							<a href="<?php echo $imdb['url']; ?>"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social-media/imdb.svg" class="w-8 h-auto" alt=""></a>
+							<a href="<?php echo $imdb['url']; ?>"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social-media/imdb.svg" class="w-8 h-auto" alt=imdb-link""></a>
 						<?php } ?>
 						<?php if($facebook) { ?>
-							<a href="<?php echo $facebook['url']; ?>"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social-media/fb.svg" class="w-8 h-auto" alt=""></a>
+							<a href="<?php echo $facebook['url']; ?>"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/social-media/fb.svg" class="w-8 h-auto" alt="facebook-link"></a>
 						<?php } ?>
 					</div>
 					<div class="col mt-6 lg:col-span-6 lg:mt-0">
-						<img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/white-logo.png"  class="w-16 h-auto mx-auto lg:ml-0 lg:order-1" alt="">
+						<img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/white-logo.png"  class="w-16 h-auto mx-auto lg:ml-0 lg:order-1" alt="footer-logo">
 					</div>
 					<div class="col mt-6 lg:hidden">
 							<p class="subtitleTwo">&copy;<?php echo date("Y"); ?> by Whitelock Design Limited.</p>

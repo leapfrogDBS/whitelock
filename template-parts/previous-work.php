@@ -27,10 +27,10 @@
                                 <div id="image-slider" class="splide relative">
                                     <div class="splide__arrows absolute right-6 bottom-6 flex gap-x-2">
                                         <button class="splide__arrow splide__arrow--prev border-none bg-transparent opacity-100 relative translate-x-0 left-auto">
-                                            <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/white-arrow-left.png" class="w-5 h-auto" alt="">
+                                            <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/white-arrow-left.png" class="w-5 h-auto" alt="left-arrow">
                                         </button>
                                         <button class="splide__arrow splide__arrow--next border-none bg-transparent opacity-100 relative translate-x-0 right-auto ">
-                                            <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/white-arrow-right.png" alt="" class="w-5 h-auto">
+                                            <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/white-arrow-right.png" alt="right-arrow" class="w-5 h-auto">
                                         </button>
                                     </div>
                                     <div class="splide__track relative">
@@ -40,7 +40,7 @@
                                         ?>
                                             <li class="splide__slide img-gradient relative inline-block">
                                             
-                                                <img loading="lazy" class="rounded-2xl object-cover h-full" src="<?php echo $slide_image['url']; ?>" alt="">
+                                                <img class="rounded-2xl object-cover h-full" data-splide-lazy="<?php echo $slide_image['url']; ?>" alt="previous-work-image">
                                             </li>
                                         <?php 
                                         }
@@ -81,6 +81,7 @@
 for ( var i = 0; i < elms.length; i++ ) {
   new Splide( elms[ i ], {
     type: 'loop',
+    lazyLoad: true,
   } ).mount();
 }
 </script>
