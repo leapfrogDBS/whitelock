@@ -38,7 +38,8 @@
                                         <?php
                                         foreach ($prev_work_slide_images as $slide_image) {
                                         ?>
-                                            <li class="splide__slide">
+                                            <li class="splide__slide img-gradient relative inline-block">
+                                            
                                                 <img loading="lazy" class="rounded-2xl object-cover h-full" src="<?php echo $slide_image['url']; ?>" alt="">
                                             </li>
                                         <?php 
