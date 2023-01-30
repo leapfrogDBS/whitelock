@@ -22,7 +22,7 @@
                         $prev_work_slide_images = get_sub_field('prev_work_slide_images');                      
 
                         ?>
-                        <div class="col mb-12 lg:col-span-6 lg:mb-0">
+                        <div class="col slider-container mb-12 lg:col-span-6 lg:mb-0">
                             <?php if ($prev_work_slide_images) { ?>
                                 <div id="image-slider" class="splide relative">
                                     <div class="splide__arrows absolute right-6 bottom-6 flex gap-x-2">
@@ -51,6 +51,9 @@
                                             <h2 class="headingTwo mb-0"><?php echo $prev_work_slide_title; ?></h2>
                                             <p class="bodyText text-left font-gothic-bold mb-0"><?php echo $prev_work_slide_subtitle; ?></p>
                                         </div>
+                                        <div class="zoom-in absolute top-6 right-6 text-white pl-12 pb-12">
+                                            <i class="fa-solid fa-magnifying-glass bodyText text-2xl"></i>
+                                        </div>
                                     </div>
                                 </div>
                             <?php
@@ -76,12 +79,23 @@
 </section>
 
 <script>
+    
+    function buildSplides(){
     var elms = document.getElementsByClassName( 'splide' );
 
-for ( var i = 0; i < elms.length; i++ ) {
-  new Splide( elms[ i ], {
-    type: 'loop',
-    lazyLoad: true,
-  } ).mount();
+    for ( var i = 0; i < elms.length; i++ ) {
+        new Splide( elms[ i ], {
+            type: 'loop',
+            lazyLoad: true,
+        } ).mount();
+    }
 }
+
+buildSplides();
+    document.querySelectorAll('.zoom-in').forEach(item => {
+        item.addEventListener('click', event => {
+            item.closest(".slider-container").classList.toggle("zoom");
+            buildSplides();
+        })
+    })
 </script>

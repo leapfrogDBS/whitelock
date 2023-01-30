@@ -14,7 +14,7 @@
     </div>
 </section>
 
-<section class="bg-no-repeat bg-black" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/bg-mesh.png')">
+<section class="bg-no-repeat bg-black bg-cover" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/bg-mesh.png')">
     <div class="container">
         <div class="row">
             <div id="card-container" class="-mt-20 col-span-12">

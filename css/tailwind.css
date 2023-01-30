@@ -1200,6 +1200,10 @@ body {
   padding-bottom: 2.5rem !important;
 }
 
+.pl-12 {
+  padding-left: 3rem !important;
+}
+
 .text-left {
   text-align: left !important;
 }
@@ -1210,6 +1214,19 @@ body {
 
 .font-gothic-bold {
   font-family: "gothic-bold", sans-serif !important;
+}
+
+.text-2xl {
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+}
+
+.font-bold {
+  font-weight: 700 !important;
+}
+
+.font-extrabold {
+  font-weight: 800 !important;
 }
 
 .uppercase {
@@ -1358,6 +1375,17 @@ body.no-scroll {
     order: 1 !important;
     border-radius: 1rem 0 0 1rem !important;
   }
+}
+
+.slider-container.zoom {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10% 20%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
 }
 
 @media (min-width: 640px) {
