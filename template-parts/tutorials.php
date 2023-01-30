@@ -1,15 +1,21 @@
 <?php
 	$tutorials_headline = get_field('tutorials_headline');
     $tutorials_copy = get_field('tutorials_copy');
+    $tutorials_whats_included = get_field('tutorials_whats_included');
+    
 	
 ?>
 <section id="tutorials-section" class="py-20 mb-6 lg:mb-20">
     <div class="container">
         <div class="row">  
-            <div class="col mb-12 mx-auto max-w-3xl">
+            <div class="col mb-20 mx-auto max-w-3xl">
                 <h2 class="headingTwo"><?php echo $tutorials_headline; ?></h2>
                 <p class="bodyText"><?php echo $tutorials_copy; ?></p>
             </div>
+        </div>
+        <div id="whats-included" class="col mb-12 mx-auto max-w-3xl">
+            <h2 class="headingTwo">What's Included</h2>
+            <p class="bodyText"><?php echo $tutorials_whats_included; ?></p>
         </div>
     </div>
 </section>

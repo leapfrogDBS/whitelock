@@ -711,6 +711,18 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+#whats-included ul {
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+#whats-included li {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  line-height: 1.25;
+}
+
 .visible {
   visibility: visible !important;
 }
@@ -861,6 +873,18 @@ body {
 
 .-mt-20 {
   margin-top: -5rem !important;
+}
+
+.mb-24 {
+  margin-bottom: 6rem !important;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem !important;
+}
+
+.mb-20 {
+  margin-bottom: 5rem !important;
 }
 
 .block {
@@ -1180,12 +1204,16 @@ body {
   padding-bottom: 5rem !important;
 }
 
-.pt-12 {
-  padding-top: 3rem !important;
+.pl-12 {
+  padding-left: 3rem !important;
 }
 
 .pb-12 {
   padding-bottom: 3rem !important;
+}
+
+.pt-12 {
+  padding-top: 3rem !important;
 }
 
 .pt-16 {
@@ -1198,10 +1226,6 @@ body {
 
 .pb-10 {
   padding-bottom: 2.5rem !important;
-}
-
-.pl-12 {
-  padding-left: 3rem !important;
 }
 
 .text-left {
@@ -1219,14 +1243,6 @@ body {
 .text-2xl {
   font-size: 1.5rem !important;
   line-height: 2rem !important;
-}
-
-.font-bold {
-  font-weight: 700 !important;
-}
-
-.font-extrabold {
-  font-weight: 800 !important;
 }
 
 .uppercase {
@@ -1698,3 +1714,4 @@ body.no-scroll {
     text-align: right !important;
   }
 }
+

@@ -41,6 +41,25 @@
             "new_lines": ""
         },
         {
+            "key": "field_63d7e9ee46c5c",
+            "label": "What's Included",
+            "name": "tutorials_whats_included",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
             "key": "field_63d13572cc250",
             "label": "Tutorials",
             "name": "tutorials_repeater",
@@ -157,5 +176,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1674655464
+    "modified": 1675094768
 }
