@@ -5,7 +5,7 @@
     $prev_work_button_link = get_field('prev_work_button_link');
     	
 ?>
-<section class="bg-black text-white pb-20 lg:pb-36">
+<section class="bg-black text-white pb-20 lg:pb-36 pt-20">
     <div class="container">
         <div class="row lg:gap-12">  
             

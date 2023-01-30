@@ -98,6 +98,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_63d7a09025a08",
+            "label": "Point of Interest Five",
+            "name": "hero_point_of_interest_five",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_63d130f25e5cd",
             "label": "Button Title",
             "name": "hero_button_title",
@@ -150,5 +169,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1674746840
+    "modified": 1675075738
 }

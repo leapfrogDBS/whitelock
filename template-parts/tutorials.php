@@ -3,7 +3,7 @@
     $tutorials_copy = get_field('tutorials_copy');
 	
 ?>
-<section class="py-20">
+<section id="tutorials-section" class="py-20 mb-6 lg:mb-20">
     <div class="container">
         <div class="row">  
             <div class="col mb-12 mx-auto max-w-3xl">
@@ -14,10 +14,10 @@
     </div>
 </section>
 
-<section id="tutorials-section" class="bg-no-repeat bg-black" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/bg-mesh.png')">
+<section class="bg-no-repeat bg-black" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/bg-mesh.png')">
     <div class="container">
         <div class="row">
-            <div class="-mt-20 col-span-12">
+            <div id="card-container" class="-mt-20 col-span-12">
                 <?php
                 if(have_rows('tutorials_repeater')) {
                     $count = 1;                    
@@ -32,7 +32,7 @@
                         <div class="col bg-whitlockBlue text-white rounded-2xl mb-12 lg:grid lg:grid-cols-12">
                             <p class="bodyText my-1 pt-1 font-gothic-bold lg:hidden"><?php echo sprintf("%02d", $count); ?></p>
                             <img loading="lazy" src="<?php echo $tutorials_image['url']; ?>" class="order-2 lg:col-span-8 lg:rounded-r-2xl lg:h-full lg:object-cover" alt="tutorial-image">
-                            <div class="px-6 py-8 pb-10 order-1 lg:col-span-4 lg:p-0 lg:flex lg:flex-col lg:justify-between">
+                            <div id="blurb" class="px-6 py-8 pb-10 order-1 lg:col-span-4 lg:p-0 lg:flex lg:flex-col lg:justify-between">
                                 <p class="hidden bodyText py-3 font-gothic-bold lg:block lg:border-b lg:border-white"><?php echo sprintf("%02d", $count); ?></p>
                                 <div class="lg:px-6 lg:text-left">
                                     <h2 class="headingTwo uppercase leading-none"><?php echo $tutorials_title; ?></h2>

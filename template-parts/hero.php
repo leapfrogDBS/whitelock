@@ -4,6 +4,7 @@
     $poi2 = get_field('hero_point_of_interest_two');
     $poi3 = get_field('hero_point_of_interest_three');
     $poi4 = get_field('hero_point_of_interest_four');
+    $poi5 = get_field('hero_point_of_interest_five');
     $hero_button_title = get_field('hero_button_title');
     $hero_button_link = get_field('hero_button_link');
 
@@ -16,21 +17,25 @@
             </div>
             <div class="col">
                 <div class="lg:flex lg:gap-x-4">
-                    <div class="poi-container">
+                    <div class="poi-container text-left">
                         <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/white-tick.png" class="h-5 w-auto" alt="white-tick-icon">
                         <p class="subtitleTwo"><?php echo $poi1; ?></p>
                     </div>
-                    <div class="poi-container">
+                    <div class="poi-container text-left">
                         <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/white-tick.png" class="h-5 w-auto" alt="white-tick-icon">
                         <p class="subtitleTwo"><?php echo $poi2; ?></p>
                     </div>
-                    <div class="poi-container">
+                    <div class="poi-container text-left">
                         <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/white-tick.png" class="h-5 w-auto" alt="white-tick-icon">
                         <p class="subtitleTwo"><?php echo $poi3; ?></p>
                     </div>
-                    <div class="poi-container mb-8 lg:mb-3">
+                    <div class="poi-container text-left">
                         <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/white-tick.png" class="h-5 w-auto" alt="white-tick-icon">
                         <p class="subtitleTwo"><?php echo $poi4; ?></p>
+                    </div>
+                    <div class="poi-container mb-8 lg:mb-3 text-lefts">
+                        <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/white-tick.png" class="h-5 w-auto" alt="white-tick-icon">
+                        <p class="subtitleTwo"><?php echo $poi5; ?></p>
                     </div>
                 </div>
                 
