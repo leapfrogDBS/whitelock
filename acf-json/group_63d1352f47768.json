@@ -122,6 +122,25 @@
                     "maxlength": ""
                 },
                 {
+                    "key": "field_63da44115e0f7",
+                    "label": "Price",
+                    "name": "tutorials_price",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
                     "key": "field_63d13592cc252",
                     "label": "Info",
                     "name": "tutorials_info",
@@ -176,5 +195,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1675094768
+    "modified": 1675248670
 }

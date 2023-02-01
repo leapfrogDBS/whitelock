@@ -32,6 +32,7 @@
                         $tutorials_title = get_sub_field('tutorials_title');
                         $tutorials_info = get_sub_field('tutorials_info');
                         $tutorials_link = get_sub_field('tutorials_link');
+                        $tutorials_price = get_sub_field('tutorials_price');
                         
 
                         ?>
@@ -44,8 +45,9 @@
                                     <h2 class="headingTwo uppercase leading-none"><?php echo $tutorials_title; ?></h2>
                                     <p class="bodyText mb-8"><?php echo $tutorials_info; ?></p>
                                 </div>
-                                <div class="lg:border-t lg:border-white lg:py-6 lg:text-left lg:pl-6">
+                                <div class="lg:border-t lg:border-white lg:py-6 lg:text-left lg:px-6 flex justify-between items-center">
                                     <a class="cta-button cta-button-white-outline" href="<?php echo $tutorials_link['url']; ?>">Find out more</a>
+                                    <h3 class="headingThree uppercase leading-none"><?php echo $tutorials_price; ?></h3>
                                 </div>
                             </div>
                         </div>

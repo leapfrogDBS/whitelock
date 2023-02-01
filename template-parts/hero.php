@@ -16,7 +16,7 @@
                 <h1 class="headingOne"><?php echo $hero_headline; ?></h1>
             </div>
             <div class="col">
-                <div class="lg:flex lg:gap-x-4">
+                <div class="lg:flex lg:gap-x-4 items-center">
                     <div class="poi-container text-left">
                         <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/white-tick.png" class="h-5 w-auto" alt="white-tick-icon">
                         <p class="subtitleTwo"><?php echo $poi1; ?></p>
@@ -33,7 +33,7 @@
                         <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/white-tick.png" class="h-5 w-auto" alt="white-tick-icon">
                         <p class="subtitleTwo"><?php echo $poi4; ?></p>
                     </div>
-                    <div class="poi-container mb-8 lg:mb-3 text-lefts">
+                    <div class="poi-container mb-8 lg:mb-3 text-left">
                         <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/white-tick.png" class="h-5 w-auto" alt="white-tick-icon">
                         <p class="subtitleTwo"><?php echo $poi5; ?></p>
                     </div>
