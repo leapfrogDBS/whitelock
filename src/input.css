@@ -34,7 +34,7 @@
     }
 
     .poi-container {
-        @apply flex items-center justify-center gap-4 mb-3 lg:items-start;
+        @apply flex items-center justify-center gap-4 mb-3;
     }
 
     .cta-container {

@@ -678,12 +678,6 @@ body {
   gap: 1rem;
 }
 
-@media (min-width: 1024px) {
-  .poi-container {
-    align-items: flex-start;
-  }
-}
-
 .cta-button {
   display: inline-block;
   border-radius: 9999px;
@@ -937,6 +931,10 @@ body {
 
 .h-3 {
   height: 0.75rem !important;
+}
+
+.max-h-96 {
+  max-height: 24rem !important;
 }
 
 .w-8 {
@@ -1694,16 +1692,18 @@ body.no-scroll {
     padding-top: 8rem !important;
   }
 
-  .lg\:pl-6 {
-    padding-left: 1.5rem !important;
-  }
-
   .lg\:text-left {
     text-align: left !important;
   }
 
   .lg\:text-right {
     text-align: right !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:h-auto {
+    height: auto !important;
   }
 }
 
