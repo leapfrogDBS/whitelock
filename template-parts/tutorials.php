@@ -38,12 +38,12 @@
                         ?>
                         <div class="col bg-whitlockBlue text-white rounded-2xl mb-12 lg:grid lg:grid-cols-12">
                             <p class="bodyText my-1 pt-1 font-gothic-bold lg:hidden"><?php echo sprintf("%02d", $count); ?></p>
-                            <img loading="lazy" src="<?php echo $tutorials_image['url']; ?>" class="order-2 lg:col-span-8 lg:rounded-r-2xl lg:h-full xl:h-auto lg:object-cover" alt="tutorial-image">
+                            <div style="background-image: url(<?php echo $tutorials_image['url']; ?>)" class="order-2 lg:col-span-8 bg-cover lg:rounded-r-2xl h-72 lg:h-full "></div>
                             <div id="blurb" class="px-6 py-8 pb-10 order-1 lg:col-span-4 lg:p-0 lg:flex lg:flex-col lg:justify-between">
                                 <p class="hidden bodyText py-3 font-gothic-bold lg:block lg:border-b lg:border-white"><?php echo sprintf("%02d", $count); ?></p>
                                 <div class="lg:px-6 lg:text-left">
-                                    <h2 class="headingTwo uppercase leading-none"><?php echo $tutorials_title; ?></h2>
-                                    <p class="bodyText mb-8"><?php echo $tutorials_info; ?></p>
+                                    <h2 class="headingTwo uppercase leading-none lg: py-6"><?php echo $tutorials_title; ?></h2>
+                                    <p class="bodyText mb-8 lg:pb-6"><?php echo $tutorials_info; ?></p>
                                 </div>
                                 <div class="lg:border-t lg:border-white lg:py-6 lg:text-left lg:px-6 flex justify-between items-center">
                                     <a class="cta-button cta-button-white-outline" href="<?php echo $tutorials_link['url']; ?>">Find out more</a>

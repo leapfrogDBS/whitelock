@@ -933,6 +933,14 @@ body {
   height: 0.75rem !important;
 }
 
+.h-56 {
+  height: 14rem !important;
+}
+
+.h-72 {
+  height: 18rem !important;
+}
+
 .max-h-96 {
   max-height: 24rem !important;
 }
@@ -1632,6 +1640,10 @@ body.no-scroll {
     border-color: rgb(255 255 255 / var(--tw-border-opacity)) !important;
   }
 
+  .lg\:bg-cover {
+    background-size: cover !important;
+  }
+
   .lg\:object-cover {
     -o-object-fit: cover !important;
        object-fit: cover !important;
@@ -1690,6 +1702,10 @@ body.no-scroll {
 
   .lg\:pt-32 {
     padding-top: 8rem !important;
+  }
+
+  .lg\:pb-6 {
+    padding-bottom: 1.5rem !important;
   }
 
   .lg\:text-left {
