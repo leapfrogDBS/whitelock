@@ -933,16 +933,8 @@ body {
   height: 0.75rem !important;
 }
 
-.h-56 {
-  height: 14rem !important;
-}
-
 .h-72 {
   height: 18rem !important;
-}
-
-.max-h-96 {
-  max-height: 24rem !important;
 }
 
 .w-8 {
@@ -1640,15 +1632,6 @@ body.no-scroll {
     border-color: rgb(255 255 255 / var(--tw-border-opacity)) !important;
   }
 
-  .lg\:bg-cover {
-    background-size: cover !important;
-  }
-
-  .lg\:object-cover {
-    -o-object-fit: cover !important;
-       object-fit: cover !important;
-  }
-
   .lg\:p-16 {
     padding: 4rem !important;
   }
@@ -1714,12 +1697,6 @@ body.no-scroll {
 
   .lg\:text-right {
     text-align: right !important;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:h-auto {
-    height: auto !important;
   }
 }
 
