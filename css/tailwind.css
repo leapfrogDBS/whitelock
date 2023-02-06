@@ -1555,6 +1555,10 @@ body.no-scroll {
     height: 1.25rem !important;
   }
 
+  .lg\:h-\[560px\] {
+    height: 560px !important;
+  }
+
   .lg\:h-full {
     height: 100% !important;
   }
