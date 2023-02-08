@@ -38,7 +38,7 @@
                         ?>
                         <div class="col bg-whitlockBlue text-white rounded-2xl mb-12 lg:grid lg:grid-cols-12 lg:h-[560px]">
                             <p class="bodyText my-1 pt-1 font-gothic-bold lg:hidden"><?php echo sprintf("%02d", $count); ?></p>
-                            <div style="background-image: url(<?php echo $tutorials_image['sizes']['large']; ?>)" class="order-2 lg:col-span-8 bg-cover lg:rounded-r-2xl h-72 lg:h-full "></div>
+                            <div style="background-image: url(<?php echo $tutorials_image['sizes']['large']; ?>)" class="order-2 lg:col-span-8 bg-cover lg:rounded-r-2xl h-72 lg:h-full" id="tutorial-image"></div>
                             <div id="blurb" class="px-6 py-8 pb-10 order-1 lg:col-span-4 lg:p-0 lg:flex lg:flex-col lg:justify-between">
                                 <p class="hidden bodyText py-3 font-gothic-bold lg:block lg:border-b lg:border-white"><?php echo sprintf("%02d", $count); ?></p>
                                 <div class="lg:px-6 lg:text-left">
