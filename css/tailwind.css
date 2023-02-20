@@ -745,6 +745,13 @@ body {
   position: sticky !important;
 }
 
+.inset-0 {
+  top: 0px !important;
+  right: 0px !important;
+  bottom: 0px !important;
+  left: 0px !important;
+}
+
 .top-0 {
   top: 0px !important;
 }
@@ -1216,6 +1223,14 @@ body {
 
 .pb-10 {
   padding-bottom: 2.5rem !important;
+}
+
+.pt-\[52\.65\%\] {
+  padding-top: 52.65% !important;
+}
+
+.pt-\[56\.25\%\] {
+  padding-top: 56.25% !important;
 }
 
 .text-left {
