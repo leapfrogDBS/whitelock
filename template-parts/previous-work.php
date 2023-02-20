@@ -40,7 +40,7 @@
                                         ?>
                                             <li class="splide__slide img-gradient relative inline-block h-0 pt-[56.25%]">
                                             
-                                                <img class="rounded-2xl object-cover absolute inset-0" data-splide-lazy="<?php echo $slide_image['url']; ?>" alt="previous-work-image">
+                                                <img class="rounded-2xl object-cover absolute h-full w-full inset-0" data-splide-lazy="<?php echo $slide_image['url']; ?>" alt="previous-work-image">
                                             </li>
                                         <?php 
                                         }
