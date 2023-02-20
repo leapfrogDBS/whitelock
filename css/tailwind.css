@@ -1250,6 +1250,16 @@ body {
   line-height: 2rem !important;
 }
 
+.text-lg {
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
+}
+
+.text-base {
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+}
+
 .uppercase {
   text-transform: uppercase !important;
 }
