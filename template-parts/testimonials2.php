@@ -1,12 +1,8 @@
 <?php
 	$testimonials_headline = get_field('testimonials_headline2');
-    $testimonials_gumroad_rating = get_field('testimonials_gumroad_rating2');
-    $testimonials_button_text = get_field('testimonials_button_text2');
-    $testimonials_button_link = get_field('testimonials_button_link2');
-    
 	
 ?>
-<section id="testimonials-section2" class="bg-cover bg-no-repeat lg:pt-8 lg:pb-20" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/loft-plan.png')">
+<section id="testimonials-section2" class="bg-cover bg-no-repeat pt-20 lg:pt-8 lg:pb-20" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/loft-plan.png')">
     <div class="container">
         <div class="row">  
             
@@ -48,17 +44,6 @@
                 }
                 ?>
 
-            <div class="col bg-cover bg-no-repeat rounded-3xl p-8 lg:p-16" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/gumroad-bg.png')">
-                <h2 class="headingTwo mb-6 lg:mb-12"><?php echo $testimonials_gumroad_rating; ?></h2>
-                <?php
-                if ($testimonials_button_text && $testimonials_button_link) {
-                ?>
-                    <a class="cta-button cta-button-black" href="<?php echo $testimonials_button_link['url']; ?>"><?php echo $testimonials_button_text; ?></a>
-                <?php
-                }
-                ?>
-            </div>
-
         </div>
     </div>
 </section>
@@ -79,5 +64,5 @@
             },
         },
     });
-    testimonailSlider.mount();
+    testimonailSlider2.mount();
 </script>
