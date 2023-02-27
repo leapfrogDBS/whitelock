@@ -23,8 +23,9 @@ get_header();
         include(locate_template('template-parts/testimonials.php'));
         include(locate_template('template-parts/tutorials.php'));
         include(locate_template('template-parts/previous-work.php')); 
+        include(locate_template('template-parts/testimonials2.php'));
         include(locate_template('template-parts/quality-assurance.php'));
-		    include(locate_template('template-parts/faqs.php'));
+		include(locate_template('template-parts/faqs.php'));
         
     ?>
 

@@ -26,9 +26,9 @@ $facebook = get_field('facebook', 'options');
 				<div class="row pb-8 border-b border-white lg:pb-14">
 					<div class="col lg:grid grid-cols-12 lg:items-center lg:gap-x-4">
 						<h3 class="bodyText font-gothic-bold lg:col-span-3 lg:mb-0 lg:text-left">Join Our Newsletter</h3>
-						<form action="" class="flex flex-col md:flex-row gap-y-3 gap-x-4 justify-center lg:col-span-6">
-							<input type="text" name="email" id="email" placeholder="Email address here" class="bg-black text-white rounded-none border-white text-center bodyText mb-0 py-2 md:w-64">
-							<input type="submit" value="Sign up" class="bg-black text-white rounded-none border-white text-center bodyText mb-0 py-2 md:w-64">
+						<form class="input-with-button flex flex-col md:flex-row gap-y-3 gap-x-4 justify-center lg:col-span-6" action="https://app.gumroad.com/follow_from_embed_form" method="post" style="--accent:var(--accent);--contrast-accent:var(--contrast-accent)" id="gumroad-follow-form-embed">
+							<input type="hidden" name="seller_id" value="8842712726344"/><input id="gumroad-follow-form-embed-input" type="email" placeholder="Email address here" name="email" value="" class="bg-black text-white rounded-none border-white text-center bodyText mb-0 py-2 md:w-64" />
+							<button id="gumroad-follow-form-embed-button" class="primary bg-black text-white rounded-none border-white text-center bodyText mb-0 py-2 md:w-64" type="submit">Sign up</button>
 						</form>
 							<p class="hidden subtitleTwo lg:bodyText lg:col-span-3 lg:mb-0 lg:text-right lg:block">&copy;<?php echo date("Y"); ?> by Whitelock Design Limited.</p>
 					</div>

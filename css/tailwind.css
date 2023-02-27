@@ -1201,6 +1201,10 @@ body {
   padding-bottom: 5rem !important;
 }
 
+.pt-\[56\.25\%\] {
+  padding-top: 56.25% !important;
+}
+
 .pl-12 {
   padding-left: 3rem !important;
 }
@@ -1225,14 +1229,6 @@ body {
   padding-bottom: 2.5rem !important;
 }
 
-.pt-\[52\.65\%\] {
-  padding-top: 52.65% !important;
-}
-
-.pt-\[56\.25\%\] {
-  padding-top: 56.25% !important;
-}
-
 .text-left {
   text-align: left !important;
 }
@@ -1248,16 +1244,6 @@ body {
 .text-2xl {
   font-size: 1.5rem !important;
   line-height: 2rem !important;
-}
-
-.text-lg {
-  font-size: 1.125rem !important;
-  line-height: 1.75rem !important;
-}
-
-.text-base {
-  font-size: 1rem !important;
-  line-height: 1.5rem !important;
 }
 
 .uppercase {
