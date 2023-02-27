@@ -21,11 +21,11 @@
                         <div class="splide__track">
                             <ul class="splide__list sm:grid sm:grid-cols-12 sm:gap-x-6 lg:gap-x-16"> 
                                 <?php
-                                while( have_rows('testimonials_repeater') ) : the_row(); 
-                                    $testimonials_image = get_sub_field('testimonials_image');
-                                    $testimonials_name = get_sub_field('testimonials_name');
-                                    $testimonials_position = get_sub_field('testimonials_position');
-                                    $testimonials_review = get_sub_field('testimonials_review');
+                                while( have_rows('testimonials_repeater2') ) : the_row(); 
+                                    $testimonials_image = get_sub_field('testimonials_image2');
+                                    $testimonials_name = get_sub_field('testimonials_name2');
+                                    $testimonials_position = get_sub_field('testimonials_position2');
+                                    $testimonials_review = get_sub_field('testimonials_review2');
 
                                     ?>
                                     <li class="splide__slide sm:col-span-4 relative pt-12 lg:pt-16">
