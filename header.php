@@ -14,6 +14,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<!-- Meta Pixel Code -->
+	<meta name="facebook-domain-verification" content="89lutp6ngz7rtmxx4my4073dwe0387" />
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
