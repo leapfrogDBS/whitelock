@@ -72,7 +72,7 @@ src="https://www.facebook.com/tr?id=592654502294741&ev=PageView&noscript=1"
 		</div>
 	</header><!-- #masthead -->
 
-<div id="mobile-menu" class="fixed left-0 right-0 bg-white py-32 top-12 w-full z-40 mobile-menu invisible opacity-0 overflow-y-scroll">
+<div id="mobile-menu" class="fixed left-0 right-0 bg-white py-32 w-full z-40 mobile-menu invisible opacity-0 overflow-y-scroll">
 	<section>	
 		<div class="container">
 			<div class="row">
