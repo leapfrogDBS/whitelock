@@ -17,23 +17,23 @@
             </div>
             <div class="col">
                 <div class="lg:flex lg:gap-x-4 items-center">
-                    <div class="poi-container text-left">
+                    <div class="poi-container text-center">
                         <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/white-tick.png" class="h-5 w-auto" alt="white-tick-icon">
                         <p class="subtitleTwo"><?php echo $poi1; ?></p>
                     </div>
-                    <div class="poi-container text-left">
+                    <div class="poi-container text-center">
                         <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/white-tick.png" class="h-5 w-auto" alt="white-tick-icon">
                         <p class="subtitleTwo"><?php echo $poi2; ?></p>
                     </div>
-                    <div class="poi-container text-left">
+                    <div class="poi-container text-center">
                         <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/white-tick.png" class="h-5 w-auto" alt="white-tick-icon">
                         <p class="subtitleTwo"><?php echo $poi3; ?></p>
                     </div>
-                    <div class="poi-container text-left">
+                    <div class="poi-container text-center">
                         <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/white-tick.png" class="h-5 w-auto" alt="white-tick-icon">
                         <p class="subtitleTwo"><?php echo $poi4; ?></p>
                     </div>
-                    <div class="poi-container mb-8 lg:mb-3 text-left">
+                    <div class="poi-container text-center">
                         <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/img/white-tick.png" class="h-5 w-auto" alt="white-tick-icon">
                         <p class="subtitleTwo"><?php echo $poi5; ?></p>
                     </div>
