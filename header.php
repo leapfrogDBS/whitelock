@@ -85,21 +85,27 @@ src="https://www.facebook.com/tr?id=592654502294741&ev=PageView&noscript=1"
 </div>
 
 <script>
-	// handle hamburger //
-	document.addEventListener("DOMContentLoaded", function(){
-		const menuBtn = document.getElementById('menu-btn');
-		const menu = document.getElementById('mobile-menu');
-		const body = document.querySelector('body');
-		
-
-		menuBtn.addEventListener('click', () => {
-      		menuBtn.classList.toggle('open')
-			menu.classList.toggle('invisible')
-			menu.classList.toggle('opacity-0')
-			menu.classList.toggle('opacity-100')
-			body.classList.toggle('no-scroll');  
-		});
-
-		
-	}); //end DOM Load
+	document.addEventListener("DOMContentLoaded", function() {
+		console.log("loaded");
+	  const menuBtn = document.getElementById("menu-btn");
+	  const menu = document.getElementById("mobile-menu");
+	  const body = document.querySelector("body");
+	
+	  function toggleMenu() {
+		menuBtn.classList.toggle("open");
+		menu.classList.toggle("invisible");
+		menu.classList.toggle("opacity-0");
+		menu.classList.toggle("opacity-100");
+		body.classList.toggle("no-scroll");
+	  }
+	
+	  menuBtn.addEventListener("click", toggleMenu);
+	
+	  // Close the mobile menu when a menu item is clicked
+	  const menuItems = document.querySelectorAll("#mobile-menu a");
+	  menuItems.forEach(function(item) {
+		item.addEventListener("click", toggleMenu);
+	  });
+	});
+	
 </script>

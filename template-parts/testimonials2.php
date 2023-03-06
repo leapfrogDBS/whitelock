@@ -9,7 +9,7 @@
             <div class="col mb-12">
                 <img loading="lazy" class="h-6 w-auto mx-auto mb-6 lg:h-8" src="<?php echo get_stylesheet_directory_uri(); ?>/img/black-stars.png" alt="5-star-rating">
                 <h2 class="headingTwo"><?php echo $testimonials_headline; ?></h2>
-            </div>
+            </div>  
 
             <?php
                 if(have_rows('testimonials_repeater')) { ?>
@@ -66,3 +66,5 @@
     });
     testimonailSlider2.mount();
 </script>
+
+
