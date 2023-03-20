@@ -17,6 +17,11 @@
             <h2 class="headingTwo">What's Included</h2>
             <p class="bodyText"><?php echo $tutorials_whats_included; ?></p>
         </div>
+        <div class="row">
+            <div class="col">
+                <h2 class="headingTwo">START HERE</h2>
+            </div>
+        </div>
     </div>
 </section>
 
