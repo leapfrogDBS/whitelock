@@ -5,7 +5,7 @@
     
 	
 ?>
-<section id="tutorials-section" class="py-20 mb-6 lg:mb-20">
+<section id="tutorials-section" class="py-20 mb-6">
     <div class="container">
         <div class="row">  
             <div class="col mb-20 mx-auto max-w-3xl">
@@ -17,18 +17,18 @@
             <h2 class="headingTwo">What's Included</h2>
             <p class="bodyText"><?php echo $tutorials_whats_included; ?></p>
         </div>
-        <div class="row">
-            <div class="col">
-                <h2 class="headingTwo">START HERE</h2>
-            </div>
-        </div>
     </div>
 </section>
 
 <section class="bg-no-repeat bg-black bg-cover" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/bg-mesh.png')">
+    <div class="row bg-whitlockBlue text-white py-6 mb-12">
+        <div class="col">
+            <h2 class="headingTwo mb-0">START HERE</h2>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
-            <div id="card-container" class="-mt-20 col-span-12">
+            <div id="card-container" class="col-span-12">
                 <?php
                 if(have_rows('tutorials_repeater')) {
                     $count = 1;                    
