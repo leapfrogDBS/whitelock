@@ -872,10 +872,6 @@ body {
   margin-bottom: 5rem !important;
 }
 
-.-mt-20 {
-  margin-top: -5rem !important;
-}
-
 .block {
   display: block !important;
 }
@@ -1520,10 +1516,6 @@ body.no-scroll {
 
   .lg\:mb-12 {
     margin-bottom: 3rem !important;
-  }
-
-  .lg\:mb-20 {
-    margin-bottom: 5rem !important;
   }
 
   .lg\:block {
