@@ -1047,6 +1047,10 @@ body {
   overflow-y: scroll !important;
 }
 
+.whitespace-nowrap {
+  white-space: nowrap !important;
+}
+
 .rounded-none {
   border-radius: 0px !important;
 }
@@ -1550,10 +1554,6 @@ body.no-scroll {
     height: 1.25rem !important;
   }
 
-  .lg\:h-\[660px\] {
-    height: 660px !important;
-  }
-
   .lg\:h-full {
     height: 100% !important;
   }
@@ -1696,6 +1696,12 @@ body.no-scroll {
 
   .lg\:text-right {
     text-align: right !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:h-\[660px\] {
+    height: 660px !important;
   }
 }
 
