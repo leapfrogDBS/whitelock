@@ -1246,6 +1246,10 @@ body {
   line-height: 2rem !important;
 }
 
+.font-bold {
+  font-weight: 700 !important;
+}
+
 .uppercase {
   text-transform: uppercase !important;
 }
@@ -1558,10 +1562,6 @@ body.no-scroll {
     height: 1.25rem !important;
   }
 
-  .lg\:h-full {
-    height: 100% !important;
-  }
-
   .lg\:w-24 {
     width: 6rem !important;
   }
@@ -1578,24 +1578,12 @@ body.no-scroll {
     width: 9rem !important;
   }
 
-  .lg\:grid-cols-12 {
-    grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
-  }
-
-  .lg\:flex-col {
-    flex-direction: column !important;
-  }
-
   .lg\:items-center {
     align-items: center !important;
   }
 
   .lg\:justify-end {
     justify-content: flex-end !important;
-  }
-
-  .lg\:justify-between {
-    justify-content: space-between !important;
   }
 
   .lg\:gap-12 {
@@ -1617,45 +1605,13 @@ body.no-scroll {
          column-gap: 4rem !important;
   }
 
-  .lg\:rounded-r-2xl {
-    border-top-right-radius: 1rem !important;
-    border-bottom-right-radius: 1rem !important;
-  }
-
-  .lg\:border-b {
-    border-bottom-width: 1px !important;
-  }
-
-  .lg\:border-t {
-    border-top-width: 1px !important;
-  }
-
-  .lg\:border-white {
-    --tw-border-opacity: 1 !important;
-    border-color: rgb(255 255 255 / var(--tw-border-opacity)) !important;
-  }
-
   .lg\:p-16 {
     padding: 4rem !important;
-  }
-
-  .lg\:p-0 {
-    padding: 0px !important;
   }
 
   .lg\:py-28 {
     padding-top: 7rem !important;
     padding-bottom: 7rem !important;
-  }
-
-  .lg\:px-6 {
-    padding-left: 1.5rem !important;
-    padding-right: 1.5rem !important;
-  }
-
-  .lg\:py-6 {
-    padding-top: 1.5rem !important;
-    padding-bottom: 1.5rem !important;
   }
 
   .lg\:pb-14 {
@@ -1688,10 +1644,6 @@ body.no-scroll {
 
   .lg\:pt-32 {
     padding-top: 8rem !important;
-  }
-
-  .lg\:pb-6 {
-    padding-bottom: 1.5rem !important;
   }
 
   .lg\:text-left {

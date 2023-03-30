@@ -52,7 +52,7 @@
                                 </div>
                                 <div class="xl:border-t xl:border-white xl:py-6 xl:text-left xl:px-6 flex justify-between items-center">
                                     <a class="cta-button cta-button-white-outline whitespace-nowrap mr-6" href="<?php echo $tutorials_link['url']; ?>">Buy now</a>
-                                    <h3 class="headingThree uppercase leading-none"><?php echo $tutorials_price; ?></h3>
+                                    <h3 class="headingFour uppercase leading-none font-bold"><?php echo $tutorials_price; ?></h3>
                                 </div>
                             </div>
                         </div>
