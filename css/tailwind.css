@@ -872,6 +872,10 @@ body {
   margin-bottom: 5rem !important;
 }
 
+.mr-6 {
+  margin-right: 1.5rem !important;
+}
+
 .block {
   display: block !important;
 }
@@ -1696,12 +1700,6 @@ body.no-scroll {
 
   .lg\:text-right {
     text-align: right !important;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:h-\[660px\] {
-    height: 660px !important;
   }
 }
 

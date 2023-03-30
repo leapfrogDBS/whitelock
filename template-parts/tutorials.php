@@ -41,7 +41,7 @@
                         
 
                         ?>
-                        <div class="col bg-whitlockBlue text-white rounded-2xl mb-12 lg:grid lg:grid-cols-12 xl:h-[660px]">
+                        <div class="col bg-whitlockBlue text-white rounded-2xl mb-12 lg:grid lg:grid-cols-12">
                             <p class="bodyText my-1 pt-1 font-gothic-bold lg:hidden"><?php echo sprintf("%02d", $count); ?></p>
                             <div style="background-image: url(<?php echo $tutorials_image['sizes']['large']; ?>)" class="order-2 lg:col-span-8 bg-cover bg-center lg:rounded-r-2xl h-72 lg:h-full" id="tutorial-image"></div>
                             <div id="blurb" class="px-6 py-8 pb-10 order-1 lg:col-span-4 lg:p-0 lg:flex lg:flex-col lg:justify-between">
@@ -51,7 +51,7 @@
                                     <p class="bodyText mb-8 lg:pb-6"><?php echo $tutorials_info; ?></p>
                                 </div>
                                 <div class="lg:border-t lg:border-white lg:py-6 lg:text-left lg:px-6 flex justify-between items-center">
-                                    <a class="cta-button cta-button-white-outline whitespace-nowrap" href="<?php echo $tutorials_link['url']; ?>">Buy now</a>
+                                    <a class="cta-button cta-button-white-outline whitespace-nowrap mr-6" href="<?php echo $tutorials_link['url']; ?>">Buy now</a>
                                     <h3 class="headingThree uppercase leading-none"><?php echo $tutorials_price; ?></h3>
                                 </div>
                             </div>
