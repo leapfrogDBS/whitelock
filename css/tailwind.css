@@ -1703,3 +1703,85 @@ body.no-scroll {
   }
 }
 
+@media (min-width: 1280px) {
+  .xl\:col-span-8 {
+    grid-column: span 8 / span 8 !important;
+  }
+
+  .xl\:col-span-4 {
+    grid-column: span 4 / span 4 !important;
+  }
+
+  .xl\:block {
+    display: block !important;
+  }
+
+  .xl\:flex {
+    display: flex !important;
+  }
+
+  .xl\:grid {
+    display: grid !important;
+  }
+
+  .xl\:hidden {
+    display: none !important;
+  }
+
+  .xl\:h-full {
+    height: 100% !important;
+  }
+
+  .xl\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
+  }
+
+  .xl\:flex-col {
+    flex-direction: column !important;
+  }
+
+  .xl\:justify-between {
+    justify-content: space-between !important;
+  }
+
+  .xl\:rounded-r-2xl {
+    border-top-right-radius: 1rem !important;
+    border-bottom-right-radius: 1rem !important;
+  }
+
+  .xl\:border-b {
+    border-bottom-width: 1px !important;
+  }
+
+  .xl\:border-t {
+    border-top-width: 1px !important;
+  }
+
+  .xl\:border-white {
+    --tw-border-opacity: 1 !important;
+    border-color: rgb(255 255 255 / var(--tw-border-opacity)) !important;
+  }
+
+  .xl\:p-0 {
+    padding: 0px !important;
+  }
+
+  .xl\:px-6 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+  .xl\:py-6 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  .xl\:pb-6 {
+    padding-bottom: 1.5rem !important;
+  }
+
+  .xl\:text-left {
+    text-align: left !important;
+  }
+}
+
